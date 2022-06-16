@@ -1,9 +1,6 @@
 package com.brihaspathee.artemis.web.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * Created in Intellij IDEA
@@ -17,7 +14,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 public class AuthenticationResponse {
 
     private boolean isAuthenticated;
