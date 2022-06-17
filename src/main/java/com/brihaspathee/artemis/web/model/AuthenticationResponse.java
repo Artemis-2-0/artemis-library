@@ -3,6 +3,8 @@ package com.brihaspathee.artemis.web.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 /**
  * Created in Intellij IDEA
  * User: Balaji Varadharajan
@@ -26,6 +28,8 @@ public class AuthenticationResponse {
 
     private String authToken;
 
+    private LocalDateTime authExpiration;
+
     private Object subject;
 
     @Override
@@ -34,6 +38,7 @@ public class AuthenticationResponse {
                 "isAuthenticated=" + isAuthenticated +
                 ", authMessage='" + authMessage + '\'' +
                 ", authToken='" + authToken + '\'' +
+                ", authExpiration=" + authExpiration +
                 ", subject=" + subject +
                 '}';
     }
