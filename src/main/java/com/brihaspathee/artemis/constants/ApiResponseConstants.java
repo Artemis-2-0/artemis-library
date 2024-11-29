@@ -16,6 +16,6 @@ public class ApiResponseConstants {
     public static final String API_SUCCESS = "10000";
     public static final String API_FAIL = "11000";
     public static final String SUCCESS_REASON = "API Call was very successful";
-    public static final String FAILURE_REASON = "API Call was not successful";
+    public static final String FAILURE_REASON = "API Call was not very successful";
     public static final String TRADING_PARTNER_API = "TRADING_PARTNER_API";
 }
